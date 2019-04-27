@@ -1,3 +1,5 @@
+import humhub from './core';
+
 /**
  * This module can be used by humhub sub modules for registering handlers and serves as core module for executing actions triggered in the gui.
  * A module can either register global handler by using the registerHandler functions or use the component mechanism.
@@ -360,17 +362,6 @@ humhub.module('action', function(module, require, $) {
         }
 
         updateBindings();
-
-        var event = require('event');
-
-        event.on('humhub:modules:ui:view:afterInit', function(evt, view) {
-
-            view.getWidth = function() {
-                return 12;
-            };
-
-        });
-
     };
 
     /**

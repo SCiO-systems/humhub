@@ -52,8 +52,7 @@ class CoreApiAsset extends AssetBundle
     public $js = [
         'js/humhub/legacy/jquery.loader.js',
         'js/humhub/legacy/app.js',
-        'js/humhub/humhub.core.js',
-        'js/humhub/humhub.util.js',
+        'js/humhub/dist/humhub.js',
         'js/humhub/humhub.log.js',
         'js/humhub/humhub.ui.view.js',
         'js/humhub/humhub.ui.additions.js',

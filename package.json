@@ -6,6 +6,9 @@
     "url": "git://github.com/humhub/humhub.git"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
     "grunt": "^1.0.3",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-concat": "^1.0.1",
@@ -14,6 +17,16 @@
     "grunt-contrib-less": "^2.0.0",
     "grunt-contrib-uglify": "^2.3.0",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-shell": "^2.1.0"
+    "grunt-shell": "^2.1.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "jshintConfig": {
+    "esversion": 6,
+    "browser": true,
+    "globals": {
+      "humhub": true,
+      "Promise": true
+    }
   }
 }
